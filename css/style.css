@@ -73,5 +73,5 @@ body{
 .dashboard{
     width: 80%;
     height: 100vh;
-    margin: 5%;
+    background-color: #1B203D;
 }
