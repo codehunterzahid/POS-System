@@ -1,12 +1,13 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     overflow: hidden;
 }
 
-.main{
+.main {
     background-color: #1B203D;
     height: 100vh;
     width: 100vw;
@@ -15,7 +16,7 @@ body{
     color: white;
 }
 
-.navbar{
+.navbar {
     height: 100vh;
     width: 20%;
     background-color: #272C4A;
@@ -23,15 +24,17 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-.logo{
+
+.logo {
     color: white;
     padding-top: 5%;
 }
-.logo span{
+
+.logo span {
     color: #D73132;
 }
 
-.list{
+.list {
     list-style: none;
     position: absolute;
     top: 15%;
@@ -41,36 +44,40 @@ body{
     justify-content: center;
     width: 100%;
 }
-.list li{
+
+.list li {
     font-size: 20px;
     padding: 15px;
     margin: 2px 0;
     cursor: pointer;
 }
-.list li:hover, .active{
+
+.list li:hover,
+.active {
     background-color: #1B203D;
     color: white;
     width: 100%;
 }
 
 
-.list li a{
+.list li a {
     padding: 15px;
     text-decoration: none;
     color: white;
     cursor: pointer;
 }
 
-.list li i:not(.fa-users-line){
+.list li i:not(.fa-users-line) {
     padding-right: 20px;
     font-size: 20px;
 }
-.fa-users-line{
+
+.fa-users-line {
     font-size: 18px;
     padding-right: 15px;
 }
 
-.dashboard{
+.dashboard {
     width: 80%;
     height: 100vh;
 }
