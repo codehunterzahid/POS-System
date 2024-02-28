@@ -1,194 +1,194 @@
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .main {
-  background-color: #1b203d;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  color: white;
+    background-color: #1b203d;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    color: white;
 }
 
 .navbar {
-  height: 100vh;
-  width: 20%;
-  background-color: #272c4a;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    height: 100vh;
+    width: 20%;
+    background-color: #272c4a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo {
-  color: white;
-  padding-top: 5%;
+    color: white;
+    padding-top: 5%;
 }
 
 .logo span {
-  color: #d73132;
+    color: #d73132;
 }
 
 .list {
-  list-style: none;
-  position: absolute;
-  top: 15%;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
+    list-style: none;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 .list li {
-  font-size: 20px;
-  padding: 15px;
-  margin: 2px 0;
-  cursor: pointer;
+    font-size: 20px;
+    padding: 15px;
+    margin: 2px 0;
+    cursor: pointer;
 }
 
 .list li:hover,
 .active {
-  background-color: #1b203d;
-  color: white;
-  width: 100%;
+    background-color: #1b203d;
+    color: white;
+    width: 100%;
 }
 
 .list li a {
-  padding: 15px;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
 }
 
 .list li i:not(.fa-users-line) {
-  padding-right: 20px;
-  font-size: 20px;
+    padding-right: 20px;
+    font-size: 20px;
 }
 
 .fa-users-line {
-  font-size: 18px;
-  padding-right: 15px;
+    font-size: 18px;
+    padding-right: 15px;
 }
 
 .dashboard {
-  width: 80%;
-  height: 100vh;
+    width: 80%;
+    height: 100vh;
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .header i {
-  margin-right: 10px;
+    margin-right: 10px;
 }
 
 .profile {
-  display: flex;
-  flex-direction: row;
-  position: absolute;
-  right: 5%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
 }
 
 .profile img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .middle {
-  width: 100%;
+    width: 100%;
 }
 
 .cards {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5%;
 }
 
 .cards .card {
-  width: 250px;
-  height: 18vh;
-  background-color: #272c4a;
-  color: white;
-  margin-left: 20px;
-  padding: 2rem 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+    width: 250px;
+    height: 18vh;
+    background-color: #272c4a;
+    color: white;
+    margin-left: 20px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cards .card div {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .cards .card p {
-  font-size: 18px;
-  color: #7c7d79;
-  margin-top: -10px;
+    font-size: 18px;
+    color: #7c7d79;
+    margin-top: -10px;
 }
 
 .cards .card i {
-  font-size: 35px;
-  color: #7c7d79;
+    font-size: 35px;
+    color: #7c7d79;
 }
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  width: 98%;
-  height: 45vh;
-  margin: 2%;
-  margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    width: 98%;
+    height: 45vh;
+    margin: 2%;
+    margin-top: 5%;
 }
 
 .company {
-  width: 70%;
-  background-color: #272c4a;
-  margin-right: 10px;
+    width: 70%;
+    background-color: #272c4a;
+    margin-right: 10px;
 }
 
 .company h5 {
-  padding-left: 27px;
-  padding-top: 27px;
-  color: #d73132;
+    padding-left: 27px;
+    padding-top: 27px;
+    color: #d73132;
 }
 
 table {
-  border-collapse: collapse;
-  width: 100%;
+    border-collapse: collapse;
+    width: 100%;
 }
 
 td {
-  font-size: 15px;
-  padding: 8px 30px;
-  text-align: left;
+    font-size: 15px;
+    padding: 8px 30px;
+    text-align: left;
 }
 
 th {
-  padding: 8px 27px;
-  font-size: 20px;
-  font-style: italic;
+    padding: 8px 27px;
+    font-size: 20px;
+    font-style: italic;
 }
 
 .sale {
-  width: 30%;
-  background-color: #272c4a;
-  margin-left: 10px;
-  /*
+    width: 30%;
+    background-color: #272c4a;
+    margin-left: 10px;
+    /*
     display: flex;
     justify-content: center;
     align-items: center;
