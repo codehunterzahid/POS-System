@@ -81,3 +81,62 @@ body {
     width: 80%;
     height: 100vh;
 }
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+.header i{
+    margin-right: 10px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 5%;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.middle{
+    width: 100%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5%;
+}
+.cards .card{
+    width: 250px;
+    height: 18vh;
+    background-color: #272C4A;
+    color: white;
+    margin-left: 20px;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cards .card div{
+    padding-top: 20px;
+}
+.cards .card p{
+    font-size: 18px;
+    color: #7C7D79;
+    margin-top: -10px;
+}
+
+.cards .card i{
+    font-size: 35px;
+    color: #7C7D79;
+}
