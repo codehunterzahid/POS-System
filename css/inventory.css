@@ -1,182 +1,180 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
-
 
 .main1 {
-    background-color: #1b203d;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    color: white;
+  background-color: #1b203d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 
 .navbar {
-    height: 100vh;
-    width: 20%;
-    background-color: #272c4a;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  height: 100vh;
+  width: 20%;
+  background-color: #272c4a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
-    color: white;
-    padding-top: 5%;
+  color: white;
+  padding-top: 5%;
 }
 
 .logo span {
-    color: #d73132;
+  color: #d73132;
 }
 
 .list {
-    list-style: none;
-    position: absolute;
-    top: 15%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  list-style: none;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .list li {
-    font-size: 20px;
-    padding: 15px;
-    margin: 2px 0;
-    cursor: pointer;
+  font-size: 20px;
+  padding: 15px;
+  margin: 2px 0;
+  cursor: pointer;
 }
 
 .list li:hover,
 .active {
-    background-color: #1b203d;
-    color: white;
-    width: 100%;
+  background-color: #1b203d;
+  color: white;
+  width: 100%;
 }
 
 .list li a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .list li i:not(.fa-users-line) {
-    padding-right: 20px;
-    font-size: 20px;
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 .fa-users-line {
-    font-size: 18px;
-    padding-right: 15px;
+  font-size: 18px;
+  padding-right: 15px;
 }
 
-
 .inventory {
-    width: 80%;
-    height: 100vh;
+  width: 80%;
+  height: 100vh;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.header a{
-    text-decoration: none;
-    color: white;
+.header a {
+  text-decoration: none;
+  color: white;
 }
 
 .header i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .profile {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    right: 5%;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 5%;
 }
 
 .profile img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 
-.countdown{
-    display: flex;
-    justify-content: space-around;
+.countdown {
+  display: flex;
+  justify-content: space-around;
 }
 
-.cards{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    margin-top: 2%;
-    flex-wrap: wrap;
-    justify-content: center;
+.cards {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card {
-    width: 190px;
-    height: 150px;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
-    align-items: center;
-  }
+  width: 190px;
+  height: 150px;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  align-items: center;
+}
 
-  .card:hover {
-    transform: scale(1.05);
-  }
+.card:hover {
+  transform: scale(1.05);
+}
 
-  .card img {
-    width: 100%;
-    height: 110px;
-  }
+.card img {
+  width: 100%;
+  height: 110px;
+}
 
-  .card-content {
-    padding: 15px;
-    text-align: center;
-  }
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
 
-  .item-price {
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+.item-price {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .add-to-cart {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #3498db;
-    color: #fff;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
+.add-to-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
 
-  .add-to-cart:hover {
-    background-color: #2980b9;
-  }
+.add-to-cart:hover {
+  background-color: #2980b9;
+}
 
-  .cart-icon {
-    margin-right: 5px;
-  }
+.cart-icon {
+  margin-right: 5px;
+}

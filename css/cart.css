@@ -1,83 +1,81 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    overflow: hidden;
+body {
+  overflow: hidden;
 }
-
 
 .main1 {
-    background-color: #1b203d;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    color: white;
+  background-color: #1b203d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 
 .navbar {
-    height: 100vh;
-    width: 20%;
-    background-color: #272c4a;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  height: 100vh;
+  width: 20%;
+  background-color: #272c4a;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .logo {
-    color: white;
-    padding-top: 5%;
+  color: white;
+  padding-top: 5%;
 }
 
 .logo span {
-    color: #d73132;
+  color: #d73132;
 }
 
 .list {
-    list-style: none;
-    position: absolute;
-    top: 15%;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+  list-style: none;
+  position: absolute;
+  top: 15%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 
 .list li {
-    font-size: 20px;
-    padding: 15px;
-    margin: 2px 0;
-    cursor: pointer;
+  font-size: 20px;
+  padding: 15px;
+  margin: 2px 0;
+  cursor: pointer;
 }
 
 .list li:hover,
 .active {
-    background-color: #1b203d;
-    color: white;
-    width: 100%;
+  background-color: #1b203d;
+  color: white;
+  width: 100%;
 }
 
 .list li a {
-    padding: 15px;
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 .list li i:not(.fa-users-line) {
-    padding-right: 20px;
-    font-size: 20px;
+  padding-right: 20px;
+  font-size: 20px;
 }
 
 .fa-users-line {
-    font-size: 18px;
-    padding-right: 15px;
+  font-size: 18px;
+  padding-right: 15px;
 }
 
 .cart {
-    width: 80%;
-    height: 100vh;
+  width: 80%;
+  height: 100vh;
 }
-
