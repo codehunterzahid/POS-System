@@ -88,6 +88,12 @@ body {
     padding: 20px;
 }
 
+
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
 .header i {
     margin-right: 10px;
 }
