@@ -188,20 +188,34 @@ th {
     width: 30%;
     background-color: #272c4a;
     margin-left: 10px;
-    /*
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
-    */
 }
 
-/*
 .sale h5 {
     color: #D73132;
     position: absolute;
     top: 27px;
     left: 27px;
 }
-*/
+
+.percentage{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 8px solid #D73132;
+}
