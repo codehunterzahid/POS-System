@@ -194,10 +194,6 @@ th {
     width: 30%;
     background-color: #272c4a;
     margin-left: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     position: relative;
 }
 
@@ -225,3 +221,6 @@ th {
     transform: translate(-50%, -50%);
     border: 8px solid #D73132;
 }
+
+  
+  
