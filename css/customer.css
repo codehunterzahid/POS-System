@@ -75,64 +75,40 @@
     padding-right: 15px;
   }
 
-  .receipt {
+  .customer-detail {
   width: 80%;
   height: 100vh;
 }
 
-
-/* Add this CSS to your existing cart.css or create a new receipt.css */
-
-.main-receipt {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
+.details{
+    width: 65%;
+    padding: 5%;
     background-color: #272c4a;
-    border-radius: 8px;
-
-  box-shadow: -1px -2px 61px -3px #272C4A;
-  -webkit-box-shadow: -1px -2px 61px -3px #272C4A;
-  -moz-box-shadow: -1px -2px 61px -3px #272C4A;
-  overflow-y: inherit;
+    margin: 30px auto;
+    border-radius: 10px;
 }
 
-.header-receipt h3 {
-    margin: 0;
-}
+table{
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-.header-receipt p {
-    margin: 5px 0;
-    font-size: 14px;
-}
-
-.items-receipt {
-    margin: 10px 0;
-}
-
-.item-receipt {
-    display: flex;
-    justify-content: space-between;
-}
-
-.total-receipt {
-    text-align: right;
-    margin-bottom: 5px;
-}
-
-.customer-details-receipt {
-    margin-bottom: 5px;
-}
-
-footer {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.print-receipt {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
+table caption{
+    font-style: italic;
+    padding: 2em;
+    color: white;
+  }
+  table th{
+    text-transform: uppercase;
+    background: #1b203d;
+    padding: 1rem;
+  }
+  
+  table tr td{
+    padding: 1em;
+  }
+  
+  table tr:nth-child(odd) {
+    background: #1b203d;
+  }
+  
