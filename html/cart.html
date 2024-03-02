@@ -32,7 +32,7 @@
                 <li><a href="./inventory.html"><i class="fa-solid fa-list-check"></i>Inventory</a></li>
                 <li class="active"><a href="./cart.html" class="active1"><i
                             class="fa-solid fa-cart-shopping"></i>Cart</a></li>
-                <li><a href=""><i class="fa-solid fa-bag-shopping"></i>Orders</a></li>
+                <li><a href=""><i class="fa-solid fa-receipt"></i>Receipt</a></li>
                 <li><a href=""><i class="fa-solid fa-users-line"></i>Customers</a></li>
                 <li><a href=""><i class="fa-solid fa-list-check"></i>Projects</a></li>
             </ul>
@@ -62,19 +62,62 @@
                 <div class="items">
 
                     <div class="item">
-                        
+                        <img src="../Assets/item1.jpeg">
+                        <div class="item-details">
+                            <h6 class="item-name">Item Name</h6>
+                            <p class="item-price">Price</p>
+                        </div>
+
+                        <div class="quantity">
+                            <i class="fa-solid fa-minus" id="minus"></i>
+                            <p class="item-quantity">11</p>
+                            <i class="fa-solid fa-plus" id="plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="../Assets/item1.jpeg">
+                        <div class="item-details">
+                            <h6 class="item-name">Item Name</h6>
+                            <p class="item-price">Price</p>
+                        </div>
+
+                        <div class="quantity">
+                            <i class="fa-solid fa-minus" id="minus"></i>
+                            <p class="item-quantity">11</p>
+                            <i class="fa-solid fa-plus" id="plus"></i>
+                        </div>
                     </div>
                     
                 </div>
 
                 <div class="customer">
 
+                    <form action="#" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
+                    
+                        <input type="submit" value="Submit">
+                      </form>
+                    
                 </div>
 
             </div>
 
 
-
+            <button class="make-receipt">Get Receipt</button>
 
         </div>
 

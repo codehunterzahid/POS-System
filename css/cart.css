@@ -122,11 +122,71 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #272C4A;
   margin-right: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px -2px 61px -3px #272C4A;
+-webkit-box-shadow: -1px -2px 61px -3px #272C4A;
+-moz-box-shadow: -1px -2px 61px -3px #272C4A;
+border-radius: 10px;
+padding: 5%;
+}
+
+.item{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 0 5px;
+  background-color: #1b203d;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+}
+.item img{
+  width: 80px;
+  border-radius: 10px;
+}
+.item-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.item-details p{
+  padding-top: -10px;
+}
+
+.quantity{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 20px;
+  padding-top: 25px;
+  width: 20%;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.quantity i{
+  background-color: #D73132;
+  color: white;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.quantity p{
+  background-color: white;
+  color:black;
+  margin-bottom: 25px;
+  padding: 3px;
+  border-radius: 5px;
 }
 
 .customer{
@@ -138,6 +198,51 @@ body {
   align-items: center;
   background-color: #272C4A;
   margin-left: 10px;
+  border-radius: 10px;
+}
+
+form {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #D73132;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.make-receipt{
+  position: absolute;
+  left: 60%;
+  bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transform: translateX(-50%);
+  padding:  10px 50px;
 }
 
 
