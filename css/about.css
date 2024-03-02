@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    overflow: hidden;
+  }
+  
+  .main1 {
+    background-color: #1b203d;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    color: white;
+  }
+  
+  .navbar {
+    height: 100vh;
+    width: 20%;
+    background-color: #272c4a;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .logo {
+    color: white;
+    padding-top: 5%;
+  }
+  
+  .logo span {
+    color: #d73132;
+  }
+  
+  .list {
+    list-style: none;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .list li {
+    font-size: 20px;
+    padding: 15px;
+    margin: 2px 0;
+    cursor: pointer;
+  }
+  
+  .list li:hover,
+  .active {
+    background-color: #1b203d;
+    color: white;
+    width: 100%;
+  }
+  
+  .list li a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .list li i:not(.fa-users-line) {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  
+  .fa-users-line {
+    font-size: 18px;
+    padding-right: 15px;
+  }
+
+  .about {
+    width: 80%;
+    height: 100vh;
+  }
+
+.vmart-container {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b203d;
+}
+
+header h1 {
+    margin: 0;
+}
+header h1 span{
+    color: #d73132;
+}
+
+.details-section,
+.product-section {
+    padding: 20px;
+    padding-top: 5px;
+    background-color: #1b203d;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.details {
+    line-height: 1.5;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    text-align: center;
+    margin: 10px;
+}
+
+.product img {
+    width: 80px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1b203d;
+}
