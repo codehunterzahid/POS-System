@@ -167,7 +167,7 @@ padding: 5%;
   position: absolute;
   right: 20px;
   padding-top: 25px;
-  width: 20%;
+  width: 30%;
   font-weight: bold;
   justify-content: space-between;
 }
@@ -179,6 +179,12 @@ padding: 5%;
   align-items: center;
   padding: 6px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity i.fa-trash{
+  background-color: #C1E8F7;
+  color: black;
 }
 
 .quantity p{
