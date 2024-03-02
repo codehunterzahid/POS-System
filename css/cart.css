@@ -109,4 +109,35 @@ body {
   margin-right: 20px;
 }
 
+.details{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2%;
+}
+
+.items{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272C4A;
+  margin-right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer{
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #272C4A;
+  margin-left: 10px;
+}
+
 
