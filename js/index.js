@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let countdownInterval;
 
-    const hoursElement = document.getElementById('hours');
-    const minElement = document.getElementById('min');
-    const secElement = document.getElementById('sec');
+    const hoursElement = document.querySelector('#hours');
+    const minElement = document.querySelector('#min');
+    const secElement = document.querySelector('#sec');
 
     updateCountdown();
 
@@ -42,4 +42,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     startCountdown();
 
+});
+
+// adding functionality to add to cart button
+
+const cartBtn = document.querySelector('.add-to-cart');
+const itemImg = document.querySelector('.item-img');
+const itemPrice = document.querySelector('.item-price');
+
+cartBtn.addEventListener('click', function () {
+    itemImg.src = document.querySelector('.item-img').src;
+    itemPrice.innerHTML = document.querySelector('.item-price').innerHTML;
 });
