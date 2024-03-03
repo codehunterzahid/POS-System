@@ -54,3 +54,4 @@ cartBtn.addEventListener('click', function () {
     itemImg.src = document.querySelector('.item-img').src;
     itemPrice.innerHTML = document.querySelector('.item-price').innerHTML;
 });
+
