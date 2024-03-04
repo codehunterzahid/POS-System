@@ -77,7 +77,7 @@
                         <img src="../Assets/item1.jpeg" alt="Item 1" class="item-img">
                         <div class="card-content">
                             <p class="item-price">20 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -87,7 +87,7 @@
                         <img src="../Assets/item2.jpeg" alt="Item 2">
                         <div class="card-content">
                             <p class="item-price">30 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -97,7 +97,7 @@
                         <img src="../Assets/item3.jpeg" alt="Item 3">
                         <div class="card-content">
                             <p class="item-price">40 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -107,7 +107,7 @@
                         <img src="../Assets/item4.jpeg" alt="Item 4">
                         <div class="card-content">
                             <p class="item-price">50 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -118,7 +118,7 @@
                         <img src="../Assets/item5.jpeg" alt="Item 4">
                         <div class="card-content">
                             <p class="item-price">60 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -132,7 +132,7 @@
                         <img src="../Assets/item6.jpeg" alt="Item 1">
                         <div class="card-content">
                             <p class="item-price">70 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -142,7 +142,7 @@
                         <img src="../Assets/item7.jpeg" alt="Item 2">
                         <div class="card-content">
                             <p class="item-price">80 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -152,7 +152,7 @@
                         <img src="../Assets/item8.jpeg" alt="Item 3">
                         <div class="card-content">
                             <p class="item-price">90 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -162,7 +162,7 @@
                         <img src="../Assets/item9.jpeg" alt="Item 4">
                         <div class="card-content">
                             <p class="item-price">100 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -173,7 +173,7 @@
                         <img src="../Assets/item10.jpeg" alt="Item 4">
                         <div class="card-content">
                             <p class="item-price">110 Rs</p>
-                            <button class="add-to-cart">
+                            <button class="add-to-cart" onclick="addToCart('Item Name', 'Item Price')">
                                 <span class="cart-icon"><i class="fas fa-shopping-cart"></i></span> Add to Cart
                             </button>
                         </div>
@@ -188,61 +188,6 @@
 
 
     </div>
-
-
-    <!-- ... (previous code) ... -->
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const addToCartButtons = document.querySelectorAll('.add-to-cart');
-        
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', addToCart);
-        });
-
-        function addToCart(event) {
-            const card = event.target.closest('.card');
-            const itemImg = card.querySelector('.item-img').src;
-            const itemPrice = card.querySelector('.item-price').innerText;
-
-            // Create a new item in the cart
-            const newItem = document.createElement('div');
-            newItem.className = 'item';
-
-            newItem.innerHTML = `
-                <img src="${itemImg}" class="item-img">
-                <div class="item-details">
-                    <p class="item-price">${itemPrice}</p>
-                </div>
-                <div class="quantity">
-                    <i class="fa-solid fa-minus" onclick="updateQuantity(this, -1)"></i>
-                    <p class="item-quantity">1</p>
-                    <i class="fa-solid fa-plus" onclick="updateQuantity(this, 1)"></i>
-                    <i class="fa-solid fa-trash" onclick="removeItem(this)"></i>
-                </div>
-            `;
-
-            // Append the new item to the cart
-            const cartItems = document.querySelector('.items');
-            cartItems.appendChild(newItem);
-        }
-
-        window.updateQuantity = function (element, increment) {
-            const quantityElement = element.parentElement.querySelector('.item-quantity');
-            let quantity = parseInt(quantityElement.innerText);
-            quantity += increment;
-            if (quantity < 1) quantity = 1; // Ensure quantity is not less than 1
-            quantityElement.innerText = quantity;
-        }
-
-        window.removeItem = function (element) {
-            const item = element.closest('.item');
-            item.remove();
-        }
-    });
-</script>
-
-<!-- ... (remaining code) ... -->
 
 
 </body>

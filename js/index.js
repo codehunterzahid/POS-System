@@ -1,5 +1,5 @@
 // this code is to add countdown timer on inventory
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   let countdownTime = localStorage.getItem("countdownTime") || 8 * 60 * 60;
 
@@ -43,69 +43,96 @@ document.addEventListener("DOMContentLoaded", function () {
   startCountdown();
 });
 
-// adding functionality to add to cart button
-document.addEventListener("DOMContentLoaded", function () {
-  const addToCartButtons = document.querySelectorAll(".add-to-cart");
+*/
 
-  addToCartButtons.forEach((button) => {
-    button.addEventListener("click", addToCart);
-  });
+// script.js
 
-  function addToCart(event) {
-    const card = event.target.closest(".card");
-    const itemImg = card.querySelector(".item-img").src;
-    const itemPrice = card.querySelector(".item-price").innerText;
+// Function to update the number of customers on the dashboard
+function updateCustomerCount() {
+  try {
+      // Get the existing customer count
+      let customerCount = parseInt(document.getElementById('customerCount').innerText);
 
-    // Create a new item in the cart
-    const newItem = document.createElement("div");
-    newItem.className = "item";
+      // Increment the customer count
+      customerCount++;
 
-    newItem.innerHTML = `
-                <img src="${itemImg}" class="item-img">
-                <div class="item-details">
-                    <p class="item-price">${itemPrice}</p>
-                </div>
-                <div class="quantity">
-                    <i class="fa-solid fa-minus" onclick="updateQuantity(this, -1)"></i>
-                    <p class="item-quantity">1</p>
-                    <i class="fa-solid fa-plus" onclick="updateQuantity(this, 1)"></i>
-                    <i class="fa-solid fa-trash" onclick="removeItem(this)"></i>
-                </div>
-            `;
-
-    // Append the new item to the cart
-    const cartItems = document.querySelector(".items");
-    cartItems.appendChild(newItem);
+      // Update the displayed count on the dashboard
+      document.getElementById('customerCount').innerText = customerCount;
+  } catch (error) {
+      console.error('Error updating customer count:', error);
   }
+}
 
-  window.updateQuantity = function (element, increment) {
-    const quantityElement =
-      element.parentElement.querySelector(".item-quantity");
-    let quantity = parseInt(quantityElement.innerText);
-    quantity += increment;
-    if (quantity < 1) quantity = 1; // Ensure quantity is not less than 1
-    quantityElement.innerText = quantity;
-  };
+// Function to add a new row to the customer table on the customer.html page
+function addCustomerToTable(name, address, phone) {
+  try {
+      // Get the customer table
+      let customerTable = document.getElementById('customerTable');
 
-  window.removeItem = function (element) {
-    const item = element.closest(".item");
-    item.remove();
-  };
-});
+      // Create a new row
+      let newRow = customerTable.insertRow(-1);
 
-document.addEventListener("DOMContentLoaded", function () {
-  const makeReceiptButton = document.querySelector(".make-receipt");
+      // Add cells to the row
+      let cell1 = newRow.insertCell(0);
+      let cell2 = newRow.insertCell(1);
+      let cell3 = newRow.insertCell(2);
+      let cell4 = newRow.insertCell(3);
 
-  function makeReceipt() {
-
-    const cartItems = document.querySelectorAll(".item");
-    const customerName = document.getElementById("name").value;
-    const customerAddress = document.getElementById("address").value;
-    const customerPhone = document.getElementById("phone").value;
-    const customerGender = document.getElementById("gender").value;
-
-
-  makeReceiptButton.addEventListener("click", makeReceipt);
-
+      // Fill cells with data
+      cell1.innerText = customerTable.rows.length - 1; // Auto-incrementing Sr. number
+      cell2.innerText = name;
+      cell3.innerText = address;
+      cell4.innerText = phone;
+  } catch (error) {
+      console.error('Error adding customer to table:', error);
   }
-});
+}
+
+// Function to handle adding an item to the cart
+function addToCart(itemName, itemPrice) {
+  try {
+      // Get the cart table
+      let cartTable = document.getElementById('cartTable');
+
+      // Create a new row
+      let newRow = cartTable.insertRow(-1);
+
+      // Add cells to the row
+      let cell1 = newRow.insertCell(0);
+      let cell2 = newRow.insertCell(1);
+      let cell3 = newRow.insertCell(2);
+      let cell4 = newRow.insertCell(3);
+
+      // Fill cells with data
+      cell1.innerText = cartTable.rows.length - 1; // Auto-incrementing item number
+      cell2.innerText = itemName;
+      cell3.innerText = itemPrice;
+      cell4.innerHTML = '<button onclick="removeFromCart(this)">Remove</button>';
+  } catch (error) {
+      console.error('Error adding item to cart:', error);
+  }
+}
+
+// Function to handle removing an item from the cart
+function removeFromCart(button) {
+  try {
+      // Get the row to be removed
+      let row = button.parentNode.parentNode;
+
+      // Remove the row from the cart table
+      row.parentNode.removeChild(row);
+  } catch (error) {
+      console.error('Error removing item from cart:', error);
+  }
+}
+
+// Function to get receipt
+function getReceipt() {
+  try {
+      // Your logic to gather information and navigate to the receipt page
+      // For simplicity, let's navigate to receipt.html
+      window.location.href = './html/receipt.html';
+  } catch (error) {
+      console.error('Error getting receipt:', error);
+  }
+}
