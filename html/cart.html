@@ -110,7 +110,30 @@
 
     </div>
 
+    <!-- ... (previous code) ... -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const makeReceiptButton = document.querySelector('.make-receipt');
+        makeReceiptButton.addEventListener('click', makeReceipt);
+
+        function makeReceipt() {
+            // Implement receipt generation logic here
+            // You can access the items in the cart and customer details
+            const cartItems = document.querySelectorAll('.item');
+            const customerName = document.getElementById('name').value;
+            const customerAddress = document.getElementById('address').value;
+            const customerPhone = document.getElementById('phone').value;
+            const customerGender = document.getElementById('gender').value;
+
+            // ... (implement your receipt logic)
+        }
+    });
+</script>
+
+<!-- ... (remaining code) ... -->
+
+
 </body>
-<script src="../js/index.js"></script>
 
 </html>
